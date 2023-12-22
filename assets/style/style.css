@@ -10,5 +10,17 @@
   font-weight: normal;
   font-style: normal;
 }
+.heading h1 {
+  font-size: 70px;
+}
+.heading h2 {
+  font-size: 50px;
+}
+.heading h3 {
+  font-size: 36px;
+}
+.heading h4 {
+  font-size: 29px;
+}
 
 /*# sourceMappingURL=style.css.map */
