@@ -5,22 +5,152 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "OpenSans-Regular";
+  src: url("assets\fontsYellowtail-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Yellowtail-Regular";
   src: url("assets\fontsYellowtail-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 69px 162px;
+}
+
 .heading h1 {
+  font-family: "Roboto", sans-serif;
   font-size: 70px;
+  color: #274C5B;
 }
 .heading h2 {
+  font-family: "Roboto", sans-serif;
   font-size: 50px;
+  color: #274C5B;
 }
 .heading h3 {
+  font-family: "Yellowtail", cursive;
   font-size: 36px;
+  color: #7EB693;
 }
 .heading h4 {
-  font-size: 29px;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: #274C5B;
+  padding-left: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 69px 162px 69px 162px;
+}
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 38px;
+  font-weight: bolder;
+  color: #274C5B;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+  padding-left: 170px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #274C5B;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.search {
+  padding-left: 150px;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat 2, 1fr;
+  grid-template-rows: 1fr;
+  background-color: #F1EFF0;
+  background-image: url(images/BannerBackground.png);
+}
+
+.slogan {
+  width: 800px;
+  display: grid;
+  grid-column: 1/2;
+  grid-template-rows: repeat 3, 1fr;
+  align-content: center;
+  padding-left: 260px;
+}
+
+.bannerpic {
+  display: grid;
+  grid-column: 2/3;
+}
+
+.knop {
+  padding-top: 23px;
+}
+
+.centralpics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-top: 150px;
+}
+
+.mission {
+  display: grid;
+  grid-template-columns: repeat 2, 1fr;
+  grid-template-rows: 1fr;
+  background-color: #F9F8F8;
+  margin-top: 190px;
+}
+
+.description {
+  width: 705px;
+  display: grid;
+  grid-column: 2/3;
+  grid-template-rows: repeat 3, 1fr;
+  align-content: center;
+  gap: 15px;
+}
+
+.text {
+  font-family: "OpenSans", sans-serif;
+  font-size: 18px;
+  display: flex;
+  padding-top: 10px;
+}
+
+.organicpromo {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+}
+
+.certif {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

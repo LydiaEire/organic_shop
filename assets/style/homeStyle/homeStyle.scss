@@ -1,0 +1,99 @@
+@import '../_vars.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: $font-roboto;
+    font-size: 38px;
+    font-weight: bolder;
+    color: $colordark;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    padding-left: 170px;
+}
+
+.nav a {
+    text-decoration: none; 
+    color: $colordark;
+    font-family: $font-roboto;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.search {
+    padding-left: 150px;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: 1fr;
+    background-color:#F1EFF0;
+    background-image: url(images/BannerBackground.png);
+}
+
+.slogan {
+    width: 800px;
+    display: grid;
+    grid-column: 1/2;
+    grid-template-rows: repeat (3, 1fr);
+    align-content: center;
+    padding-left: 260px;
+}
+
+.bannerpic {
+    display: grid;
+    grid-column: 2/3;
+}
+
+.knop {
+    padding-top: 23px;
+}
+
+.centralpics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 150px;
+}
+
+.mission {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #F9F8F8;
+    margin-top: 190px;
+    }
+    .description {
+        width: 705px;
+        display: grid;
+        grid-column: 2/3;
+        grid-template-rows: repeat (3, 1fr);
+        align-content: center;
+        gap: 15px;
+    }
+    .text {
+        font-family: $font-open_sans;
+        font-size: 18px;
+        display: flex;
+        padding-top: 10px;
+    }
+    .organicpromo {
+        display: flex;
+        justify-content: center;
+        padding-top: 45px;
+    }
+
+.certif {
+    display:flex;
+}

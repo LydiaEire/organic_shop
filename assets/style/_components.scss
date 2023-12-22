@@ -1,14 +1,23 @@
 .heading {
     & h1 {
+        font-family: $font-roboto;
         font-size: 70px;
+        color: $colordark;
     }
     & h2 {
+        font-family: $font-roboto;
         font-size: 50px;
+        color: $colordark;
     }
     & h3 {
-        font-size: 36px;    
+        font-family: $font-yellowtail;
+        font-size: 36px;
+        color: $colorlight;    
     }
     & h4 {
-        font-size: 29px;
+        font-family: $font-roboto;
+        font-size: 25px;
+        color: $colordark;
+        padding-left: 20px;
     }
 }
