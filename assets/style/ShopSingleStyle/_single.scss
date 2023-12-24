@@ -1,0 +1,304 @@
+@import '../_vars.scss';
+@import '../_components.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: $font-roboto;
+    font-size: 38px;
+    font-weight: bolder;
+    color: $colordark;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    padding-left: 170px;
+}
+
+.nav a {
+    text-decoration: none; 
+    color: $colordark;
+    font-family: $font-roboto;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.search {
+    padding-left: 150px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex: 1;
+}
+
+.box {
+    width: 100%; 
+    max-width: 100%; 
+    position: relative;
+}
+
+.box__banner {
+    width: 100%; 
+    display: flex;
+}
+
+.product-details {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 261px;  
+    margin-right: 322px;
+    margin-top: 133px;
+    
+    &__tag {
+        padding: 5px 12px 6px;
+        background-color: #274c5b;
+        border-radius: 8px;
+        font-family: "Open Sans-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+
+    &__img-promo {
+        position: relative;
+        width: 591px;
+        height: 563px;
+    }
+
+    &__name {
+        position: relative;
+        width: 382px;
+        font-family: "Roboto-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #274c5b;
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    &__content {
+        margin-top: 10rem;
+    }
+
+    &__description {
+        margin-top: 27px;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-weight: 400;
+        color: #515b5f;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 29.8px;
+    }
+
+    &__add-to-cart {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 18px 19px 20px;
+        position: relative;
+        background-color: #274c5b;
+        border-radius: 16px;
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        margin-left: 20px;
+        font-family: "Roboto-Bold", Helvetica;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: normal;
+        transition: background-color 0.3s ease; 
+    }
+    &__add-to-cart:hover {
+        background-color: #3a6f82; 
+    }
+
+    &__label {
+        font-family: "Roboto-Bold", Helvetica;
+        font-weight: 700;
+        color: #274c5b;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    &__quantity {
+        margin-top: 35px;
+    }
+
+    &__input {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 19px 1px 22px;
+        position: relative;
+        background-color: #ffffff;
+        border-radius: 16px;
+        border: 2px solid;
+        border-color: #274c5b;
+    }
+}
+
+.product-buttons {
+    margin-top: 90px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 27px;  
+
+    &__desc {
+        gap: 10px;
+        padding: 20px 50px;
+        position: relative;
+        background-color: #274c5b;
+        border-radius: 16px;
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Open Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    &__info {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px 50px;
+        margin-left: 20px;
+        position: relative;
+        background-color: #eff6f1;
+        border-radius: 16px;
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Open Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #274c5b;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    &__description {
+        font-family: "Open Sans-Regular", Helvetica;
+        font-weight: 400;
+        color: #515b5f;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 29.8px;
+        margin-top: 27px;
+    }
+}
+
+.utility-pages,
+.about,
+.contact-us {
+    display: inline;
+    gap: 10px;
+    width: 100%;
+}
+.utility-pages{
+    order: 3;
+}
+
+.about{
+    order: 2;
+}
+
+.utility-pages h4,
+.about .logo h2,
+.contact-info h4 {
+    font-family: $font-roboto, sans-serif;
+    font-size: 24px;
+    color: #274c5b;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.utility-pages ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.utility-pages ul li {
+    font-family: $font-open_sans, sans-serif;
+    font-size: 18px;
+    // line-height: 50px;
+    margin-bottom: calc(50px - 18px);
+    color: #515b5f;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    a {
+        text-decoration: none;
+        color:inherit;
+        &:hover {
+            color: #191b1c;
+        }
+    }
+}
+
+.about .logo .logo-2 {
+    width: 39px;
+    height: 56px;
+}
+
+p .desc {
+    margin-bottom: 10px;
+}
+
+.about .content p {
+    font-family: $font-open_sans, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #515b5f;
+    margin-bottom: 30px;
+}
+
+.about .content .follow {
+    display: flex;
+    gap: 10px;
+}
+
+.about .content .follow img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-info address {
+    font-family: $font-open_sans, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #515b5f;
+}
+
+.copyright{
+    position: fixed;
+    font-family: $font-open_sans, Helvetica;
+    font-weight: 400;
+    color: #515b5f;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 29.8px;
+    white-space: nowrap;
+}
