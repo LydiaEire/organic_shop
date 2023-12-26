@@ -1,38 +1,7 @@
 @import '../_vars.scss';
 @import '../_components.scss';
+@import '../template.scss';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.logo {
-    font-family: $font-roboto;
-    font-size: 38px;
-    font-weight: bolder;
-    color: $colordark;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav {
-    display: flex;
-    gap: 25px;
-    padding-left: 170px;
-}
-
-.nav a {
-    text-decoration: none; 
-    color: $colordark;
-    font-family: $font-roboto;
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-.search {
-    padding-left: 150px;
-}
 
 .container {
     display: flex;
@@ -41,23 +10,36 @@
     flex: 1;
 }
 
-.box {
+.main-banner {
+    display: flex;
     width: 100%; 
-    max-width: 100%; 
+    max-width: 100%;
+    height: 450px; 
     position: relative;
+    justify-content: center;
+    background-image: url(/assets/images/singleImg/Banner.jpg);
+    .box__label {
+        margin-top: 184px;
+        font-family: "Roboto-ExtraBold", Helvetica;
+        font-weight: 800;
+        color: #274c5b;
+        font-size: 70px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+        
+    }
 }
 
-.box__banner {
-    width: 100%; 
-    display: flex;
-}
 
 .product-details {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     margin-left: 261px;  
     margin-right: 322px;
     margin-top: 133px;
+    flex-wrap: wrap;
     
     &__tag {
         padding: 5px 12px 6px;
@@ -191,7 +173,7 @@
         font-family: "Open Sans-Bold", Helvetica;
         font-weight: 700;
         color: #274c5b;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
         letter-spacing: 0;
         line-height: normal;
@@ -208,97 +190,61 @@
     }
 }
 
-.utility-pages,
-.about,
-.contact-us {
-    display: inline;
-    gap: 10px;
-    width: 100%;
-}
-.utility-pages{
-    order: 3;
-}
-
-.about{
-    order: 2;
-}
-
-.utility-pages h4,
-.about .logo h2,
-.contact-info h4 {
-    font-family: $font-roboto, sans-serif;
-    font-size: 24px;
-    color: #274c5b;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.utility-pages ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.utility-pages ul li {
-    font-family: $font-open_sans, sans-serif;
-    font-size: 18px;
-    // line-height: 50px;
-    margin-bottom: calc(50px - 18px);
-    color: #515b5f;
-    &:last-child {
-        margin-bottom: 0;
-    }
-    a {
-        text-decoration: none;
-        color:inherit;
-        &:hover {
-            color: #191b1c;
-        }
-    }
-}
-
-.about .logo .logo-2 {
-    width: 39px;
-    height: 56px;
-}
-
-p .desc {
-    margin-bottom: 10px;
-}
-
-.about .content p {
-    font-family: $font-open_sans, sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #515b5f;
-    margin-bottom: 30px;
-}
-
-.about .content .follow {
+.related-products {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+
+    &__title {
+        margin-top: 80px;
+        font-family: "Roboto-ExtraBold", Helvetica;
+        font-weight: 800;
+        color: #274c5b;
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+    }
 }
 
-.about .content .follow img {
-    width: 20px;
-    height: 20px;
-}
-
-.contact-info address {
-    font-family: $font-open_sans, sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #515b5f;
-}
-
-.copyright{
-    position: fixed;
-    font-family: $font-open_sans, Helvetica;
-    font-weight: 400;
-    color: #515b5f;
-    font-size: 18px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 29.8px;
-    white-space: nowrap;
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 150px;
+    gap: 13px;
+    &__name{
+        font-family: "Roboto-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #274c5b;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+    }
+    &__pricing{
+        display: flex;
+        width: 279px;
+        align-items: center;
+        gap: 81px;
+        position: relative;
+    }
+    &__tag {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px 12px 6px;
+        position: relative;
+        background-color: #274c5b;
+        border-radius: 8px;
+        font-family: "Open Sans-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 15px;
+    }
 }

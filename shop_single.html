@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="normaliser" href="./assets/normalize.css" />
-        <link rel="stylesheet" href="assets/style/style.css" />
+        <link rel="normaliser" href="./assets/normalize.css"/>
+        <link rel="stylesheet" href="assets/style/style.css"/>
         <title>Product card</title>
     </head>
 <body>
@@ -29,45 +29,87 @@
         </div>
     </header>
     <main>
-        <div class="box">
-            <img class="box__banner" src="assets/images/singleImg/Banner.png"/>
+        <div class="box main-banner">
+            <div class="box__label">Shop Single</div>
         </div>
+
         <div class="product-details">
             <button class="product-details__tag">Millets</button>
             <img class="product-details__img-promo" src="assets/images/singleImg/Nuts.png"/>
             <div class="product-details__content">
                 <div class="product-details__name-and-price">
-                    <div class="product-details__name">Health Pistachios
+                    <div class="product-details__name">Health Pistachios</div>
+                    <div class="product-details__rating">
+                        <img class="product-details__star" src="assets/images/singleImg/Star.png" />
                     </div>
-                <div class="product-details__rating">
-                    <img class="product-details__star" src="assets/images/singleImg/Star.png" />
-                <div class="product-details__pricing">
-                    <div class="product-details__original-price">$20.00
-                    </div>
-                    <div class="product-details__discounted-price">$13.00
+                    <div class="product-details__pricing">
+                        <div class="product-details__original-price"><s>$20.00</s></div>
+                        <div class="product-details__discounted-price"><strong>$13.00</strong></div>
                     </div>
                 </div>
             </div>
-            <p class="product-details__description">Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
-            </p>
-                <div class="product-details__quantity">
-                    <span class="product-details__label">Quantity:</span>
-                    <input type="number" id="quantity" name="quantity" class="product-details__input" value="1" min="1" />
-                    <button class="product-details__add-to-cart">
-                        <span class="product-details__text">Add To Cart</span>
-                        <img class="product-details__arrow" src="assets/images/singleImg/Arrow.png" />
-                    </button>
+            <p class="product-details__description">Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+            <div class="product-details__quantity">
+                <span class="product-details__label">Quantity:</span>
+                <input type="number" id="quantity" name="quantity" class="product-details__input" value="1" min="1" />
+                <button class="product-details__add-to-cart">
+                    <span class="product-details__text">Add To Cart</span>
+                    <img class="product-details__arrow" src="assets/images/singleImg/Arrow.png" />
+                </button>
+            </div>   
+            <div class="product-buttons">
+                <button class="product-buttons__desc">Product Description</button>
+                <button class="product-buttons__info">Additional Info</button>
+                <p class="product-buttons__description">
+                    Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the
+                    principles of health, ecology, and care. We aim to give our customers a healthy chemical-free meal for perfect
+                    nutrition. It offers about 8–10% carbs. Simple sugars — such as glucose and fructose — make up 70% and 80% of
+                    the carbs in raw.
+                </p>
+            </div>
+        </div>    
+        <div class="related-products">
+            <span class="related-products__title">Related Products</span>
+            <div class="product">
+                <div class="product__tag">Vegetable</div>
+                <img class="product__img" src="assets/images/singleImg/broccoli.png"/>
+                <div class="product__name">Calabrese Broccoli</div>
+                <div class="product__pricing">
+                    <div class="product__original-price"><s>$20.00</s></div>
+                    <div class="product__discounted-price"><strong>$13.00</strong></div>
+                    <img class="product-details__star" src="assets/images/singleImg/Star.png"/>
                 </div>
-                <div class="product-buttons">
-                    <button class="product-buttons__desc">Product Description</button>
-                    <button class="product-buttons__info">Additional Info</button>
-                    <p class="product-buttons__description">
-                        Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the
-                        principles of health, ecology, and care. We aim to give our customers a healthy chemical-free meal for perfect
-                        nutrition. It offers about 8–10% carbs. Simple sugars — such as glucose and fructose — make up 70% and 80% of
-                        the carbs in raw.
-                    </p>
+            </div>
+            <div class="product">
+                <div class="product__tag">Fresh</div>
+                <img class="product__img" src="assets/images/singleImg/banana.png"/>
+                <div class="product__name">Fresh Banana Fruites</div>
+                <div class="product__pricing">
+                    <div class="product__original-price"><s>$20.00</s></div>
+                    <div class="product__discounted-price"><strong>$14.00</strong></div>
+                    <img class="product-details__star" src="assets/images/singleImg/Star.png"/>
                 </div>
+            </div>
+            <div class="product">
+                <div class="product__tag">Millets</div>
+                <img class="product__img" src="assets/images/singleImg/Nuts.png"/>
+                <div class="product__name">White Nuts</div>
+                <div class="product__pricing">
+                    <div class="product__original-price"><s>$20.00</s></div>
+                    <div class="product__discounted-price"><strong>$15.00</strong></div>
+                    <img class="product-details__star" src="assets/images/singleImg/Star.png"/>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__tag">Vegetable</div>
+                <img class="product__img" src="assets/images/singleImg/tomato.png"/>
+                <div class="product__name">Vegan Red Tomato</div>
+                <div class="product__pricing">
+                    <div class="product__original-price"><s>$20.00</s></div>
+                    <div class="product__discounted-price"><strong>$17.00</strong></div>
+                    <img class="product-details__star" src="assets/images/singleImg/Star.png"/>
+                </div>
+            </div>       
         </div>
     </main>
     <footer class="footer">
