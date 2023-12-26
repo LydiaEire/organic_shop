@@ -1,0 +1,389 @@
+@import '../_vars.scss';
+@import '../_components.scss';
+@import '../template';
+
+// Block1
+.about-us__block1 {
+    width: 1920px;
+    height: 450px;
+    flex-shrink: 0;
+    background-image: url(/assets/images/aboutImg/background_block1.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .about-us__block1__title {
+        font-family: $compfont; 
+        font-size: 70px;
+        font-weight: 700;
+        color: $compcolor;
+        flex-shrink: 0;
+    }
+}
+
+// Block2
+.about-us__block2 {
+    width: 1920px;
+    margin: 163px 263px 0 0;
+    display: flex;
+    background-color: $compcolor3;
+    .about-us__block2__images {
+        display: flex;
+        .about-us__block2__img_1 {
+            position: absolute;
+            width: 466px;
+            height: 465px;
+            top: 900px;
+            left: 35px;
+            z-index: 0;
+        }
+        .about-us__block2__img_2 {
+            width: 910px;
+            height: 607px;
+            margin-left: 100px;
+            z-index: 100;
+        }
+    }
+    .about-us__block2__content {
+        display: flex;
+        flex-direction: column;
+        width: 675px;
+        .about-us__block2__title_2 {
+            padding-top: 10px;
+            width: 675px;
+            color: $compcolor;
+        }
+        .about-us__block2__text {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding-top: 14px;
+        }
+        .about-us__block2__icons {
+            display: flex;
+            padding-top: 49px;
+            gap: 65px;
+            .about-us__block2__icons_item {
+                display: flex;
+                gap: 15px;
+                .about-us__block2__icons_img1 {
+                    width: 46px;
+                    height: 46px;
+                }
+                .about-us__block2__icons_img2 {
+                    width: 56px;
+                    height: 56px;
+                }
+            }
+            .about-us__block2__title-mid {
+                font-size: 25px;
+                font-weight: 500;
+            }
+        }
+        .about-us__block2__button {
+            padding-top: 58px;
+            .about-us__block2_button-explore {
+                display: flex;
+                padding: 28px 39px 29px 35px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 16px;
+                border: none;
+                width: 230px;
+                height: 80px;
+                background-color: $compcolor;
+                color: $compcolor3;
+                font-family: $compfont;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+// Block3
+.about-us__block3 {
+    width: 1920px;
+    height: 1429px;
+    background-color: $color4;
+    margin-top: 150px;
+    .about-us__block3__part1 {
+        padding: 200px 248px 0 260px;
+        display: flex;
+        gap: 51px;
+        .about-us__block3__part1-content {
+            width: 671px;
+            .about-us__block3__title_2 {
+                width: 524px;
+                padding-top: 6px;
+                color: $compcolor;
+            }
+            .about-us__block3__text_1 {
+                padding-top: 25px;
+            }
+            .about-us__block3__fake-button_1 {
+                margin-top: 36px;
+            }
+            .about-us__block3__text_2 {
+                padding: 12px 0 0 60px;
+                width: 500px;
+                height: 60px;
+            }
+            .about-us__block3__fake-button_2 {
+                margin-top: 24px;
+            }
+        }
+        .about-us__block3__part1_img {
+            border-radius: 45px;
+        }
+    }
+    .about-us__block3__part2 {
+        margin: 91px 401px 189px 401px;
+        display: flex;
+        gap: 30px;
+        .about-us__block3__part2-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 257px;
+            height: 335px;
+            background-color: $compcolor3;
+            border-radius: 30px;
+            .about-us__block3__part2_img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 95px;
+                height: 95px;
+                flex-shrink: 0;
+                border-radius: 18px;
+                background-color: $color4;
+            }
+            .about-us__block3__part2-item_title {
+                padding-top: 15px;
+                font-size: 25px;
+                font-weight: 700;
+            }
+            .about-us__block3__part2-item_text {
+                padding-top: 12px;
+                width: 184px;
+                height: 115px;
+            }
+        }
+    }
+}
+
+// Block4
+.about-us__block4 {
+    width: 1920px;
+    background-color: $compcolor3;
+    .about-us__block4__content {
+        margin: 177px 534px 0 534px;
+        width: 852px;
+        height: 184px;
+        text-align: center;
+        .about-us__block3__title_2 {
+            color: $compcolor;
+        }
+        .about-us__block4__text {
+            padding-top: 16px;
+        }
+    }
+    .about-us__block4__experts {
+        display: flex;
+        margin: 42px 259px 202px 260px;
+        gap: 27px;
+        .about-us__block4__expert-block {
+            width: 449px;
+            height: 616px;
+            border-radius: 25px;
+            background-color: $color4;
+            .about-us__block4__expert-photo {
+                border-top-right-radius: 25px;
+                border-top-left-radius: 25px;
+            }
+            .about-us__block4__expert-name {
+                padding: 35px 0 0 28px;
+                font-size: 25px;
+                font-weight: 700;
+            }
+            .about-us__block4__expert-posicion {
+                padding-left: 28px;
+                color: $compcolor2;
+                font-family: $compfont3;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .about-us__block4__expert-contacts {
+                display: flex;
+                gap: 17px;
+                padding-left: 317px;
+            }
+        }
+    }
+}
+
+// Block5
+.about-us__block5 {
+    width: 1920px;
+    background-color: $compcolor;
+    text-align: center;
+    .about-us__block5__title_1 {
+        padding-top: 188px;
+    }
+    .about-us__block5__title_2 {
+        padding-top: 8px;
+        color: $compcolor3;
+        font-family: $compfont;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .about-us__block5__item-block {
+        display: flex;
+        gap: 21px;
+        padding: 34px 0 188px 260px;
+        .about-us__block5__item {
+            .about-us__block5__img {
+                width: 335px;
+                height: 314px;
+                border-radius: 25px;
+                background-color: $compcolor3;
+            }
+        }
+        .about-us__block5__item-title {
+            padding-top: 24px;
+            color: $compcolor3;
+            font-family: $compfont;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
+
+// Block6
+.about-us__block6 {
+    width: 1920px;
+    background-color: $compcolor3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .subscribe-block {
+        display: flex;
+        gap: 326px;
+        margin: 141px 0 70px 0;
+        width: 1400px;
+        height: 323px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background-image: url(/assets/images/aboutImg/img_block6.svg);
+        .about-us__block6__title {
+            padding: 105px 0 0 71px;
+            color: $compcolor3;
+            width: 430px;
+            height: 113px;
+            flex-shrink: 0;
+        }
+        .about-us__block6__input-box {
+            margin-top: 121.5px;
+            display: flex;
+            gap: 6px;
+            .about-us__block6__email-box {
+                width: 349px;
+                height: 80px;
+                flex-shrink: 0;
+                border-radius: 16px;
+                border: none;
+                background: $compcolor3;
+                padding: 5px 0 0 23px;
+                color: $color5;
+                font-family: $compfont;
+                font-size: 18px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .about-us__block6__button {
+                width: 220px;
+                height: 80px;
+                padding: 28px 47px 29px 47px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 16px;
+                border: none;
+                background-color: $compcolor;
+                color: $compcolor3;
+                font-family: $compfont;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+// Text block
+.subtitle {
+    color: $color6;
+    font-family: $compfont4;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165.4%;
+}
+
+// Title h2 block
+.h2 {
+    font-family: $compfont2;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+// Title h3 block
+.h3 {
+    color: $compcolor2;
+    font-family: $compfont3;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+// Title middle block
+.title-mid {
+    color: $compcolor;
+    font-family: $compfont;
+    font-style: normal;
+    line-height: normal;
+}
+
+.about-us__block3__title-mid {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+// Div-block3 block
+.fake-button {
+    display: flex;
+    padding: 29px 91px 29px 27px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 49px;
+    background: $color7;
+    width: 350px;
+    height: 81px;
+}
