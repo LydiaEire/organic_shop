@@ -1,0 +1,259 @@
+@import '../_vars.scss';
+@import '../_components.scss';
+@import '../template';
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* roboto-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* roboto-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* yellowtail-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/yellowtail-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+.background_pict {
+    height: 450px;
+    width: 1920px;
+    background: url(/assets/images/teamImg/background_image.svg);
+    text-align: center;
+    padding: 184px;
+}
+.h1_text {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 70px;
+    color: #274C5B;
+}
+.wrapper {
+    max-width: 1401px;
+    margin-left: 534.5px;
+    margin-top: 150px;
+}
+.team {
+    font-family: 'Yellowtail';
+    font-weight: 400;
+    color: #7EB693;
+    font-size: 36px;
+    text-align: center;
+}
+.experts {
+    font-family: 'Roobto';
+    font-weight: 800;
+    font-size: 50px;
+    color: #274C5B;
+    text-align: center;
+}
+.your_text {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+}
+.our_team_main_1 {
+    display: grid;
+    width: 1401px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 260px;
+    margin-top: 42px;
+}
+.our_team_giovani {
+    width: 449px;
+    height: 615px;
+    border-radius: 25px;
+    background-color: #F9F8F8;
+}
+.our_team_giovani_name {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 25px;
+    color: #274C5B;
+    margin-top: 34.5px;
+    margin-left: 28.37px;
+}
+.our_team_giovani_job {
+    font-family: 'Yellowtail';
+    margin-left: 28.37px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #7EB693;
+}
+.our_team_giovani_social {
+    display: flex;
+    gap: 18.6px;
+    padding-left: 350px;
+    margin-top: -28.37px;
+}
+.our_team_marianne {
+    width: 449px;
+    height: 615px;
+    border-radius: 25px;
+    background-color: #F9F8F8;
+}
+.our_team_marianne_name {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 25px;
+    color: #274C5B;
+    margin-top: 34.5px;
+    margin-left: 28.37px;
+}
+.our_team_marianne_job {
+    font-family: 'Yellowtail';
+    margin-left: 28.37px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #7EB693;
+}
+.our_team_marianne_social {
+    display: flex;
+    gap: 18.6px;
+    padding-left: 310px;
+    margin-top: -28.37px;
+}
+.our_team_riga {
+    width: 449px;
+    height: 615px;
+    border-radius: 25px;
+    background-color: #F9F8F8;
+}
+.our_team_riga_name {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 25px;
+    color: #274C5B;
+    margin-top: 34.5px;
+    margin-left: 28.37px;
+}
+.our_team_riga_job {
+    font-family: 'Yellowtail';
+    margin-left: 28.37px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #7EB693;
+}
+.our_team_riga_social {
+    display: flex;
+    gap: 18.6px;
+    padding-left: 310px;
+    margin-top: -28.37px;
+}
+.our_team_main_2 {
+    display: grid;
+    width: 1401px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 260px;
+    margin-top: 42px;
+}
+.our_team_keira {
+    width: 449px;
+    height: 615px;
+    border-radius: 25px;
+    background-color: #F9F8F8;
+}
+.our_team_keira_name {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 25px;
+    color: #274C5B;
+    margin-top: 34.5px;
+    margin-left: 28.37px;
+}
+.our_team_keira_job {
+    font-family: 'Yellowtail';
+    margin-left: 28.37px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #7EB693;
+}
+.our_team_keira_social {
+    display: flex;
+    gap: 18.6px;
+    padding-left: 350px;
+    margin-top: -28.37px;
+}
+.our_team_scott {
+    width: 449px;
+    height: 615px;
+    border-radius: 25px;
+    background-color: #F9F8F8;
+}
+.our_team_scott_name {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 25px;
+    color: #274C5B;
+    margin-top: 34.5px;
+    margin-left: 28.37px;
+}
+.our_team_scott_job {
+    font-family: 'Yellowtail';
+    margin-left: 28.37px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #7EB693;
+}
+.our_team_scott_social {
+    display: flex;
+    gap: 18.6px;
+    padding-left: 310px;
+    margin-top: -28.37px;
+}
+.our_team_karen {
+    width: 449px;
+    height: 615px;
+    border-radius: 25px;
+    background-color: #F9F8F8;
+}
+.our_team_karen_name {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 25px;
+    color: #274C5B;
+    margin-top: 34.5px;
+    margin-left: 28.37px;
+}
+.our_team_karen_job {
+    font-family: 'Yellowtail';
+    margin-left: 28.37px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #7EB693;
+}
+.our_team_karen_social {
+    display: flex;
+    gap: 18.6px;
+    padding-left: 310px;
+    margin-top: -28.37px;
+}
