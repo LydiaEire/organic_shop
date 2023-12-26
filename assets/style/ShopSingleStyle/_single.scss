@@ -17,6 +17,7 @@
     height: 450px; 
     position: relative;
     background-repeat: no-repeat;
+    background-position: center;
     justify-content: center;
     background-image: url(/assets/images/singleImg/Banner.jpg);
     .box__label {
@@ -193,10 +194,11 @@
 
 .related-products {
     display: flex;
-    gap: 40px;
     position: relative;
 
     &__title {
+        display: flex;
+        justify-content: center;
         margin-top: 80px;
         font-family: "Roboto-ExtraBold", Helvetica;
         font-weight: 800;
@@ -207,13 +209,14 @@
         line-height: normal;
         white-space: nowrap;
     }
+
 }
 
 .product {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 300px;
+    margin-top: 120px;
     margin-bottom: 200px;
     gap: 13px;
     &__name{
@@ -246,5 +249,8 @@
         font-weight: 600;
         color: #ffffff;
         font-size: 15px;
+    }
+    &__img {
+        max-width: 100%;
     }
 }

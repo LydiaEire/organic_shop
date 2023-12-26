@@ -725,6 +725,7 @@ header .search {
   height: 450px;
   position: relative;
   background-repeat: no-repeat;
+  background-position: center;
   justify-content: center;
   background-image: url(/assets/images/singleImg/Banner.jpg);
 }
@@ -888,10 +889,11 @@ header .search {
 
 .related-products {
   display: flex;
-  gap: 40px;
   position: relative;
 }
 .related-products__title {
+  display: flex;
+  justify-content: center;
   margin-top: 80px;
   font-family: "Roboto-ExtraBold", Helvetica;
   font-weight: 800;
@@ -907,7 +909,7 @@ header .search {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 300px;
+  margin-top: 120px;
   margin-bottom: 200px;
   gap: 13px;
 }
@@ -941,6 +943,9 @@ header .search {
   font-weight: 600;
   color: #ffffff;
   font-size: 15px;
+}
+.product__img {
+  max-width: 100%;
 }
 
 .heading h1 {
