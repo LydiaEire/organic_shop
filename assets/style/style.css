@@ -726,6 +726,7 @@ header .search {
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   justify-content: center;
   background-image: url(/assets/images/singleImg/Banner.jpg);
 }
@@ -793,6 +794,7 @@ header .search {
   background-color: #274c5b;
   border-radius: 16px;
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: -1px;
   margin-left: 20px;
@@ -845,6 +847,7 @@ header .search {
   background-color: #274c5b;
   border-radius: 16px;
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: -1px;
   font-family: "Open Sans-Bold", Helvetica;
@@ -866,6 +869,7 @@ header .search {
   background-color: #eff6f1;
   border-radius: 16px;
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: -1px;
   font-family: "Open Sans-Bold", Helvetica;
@@ -1140,7 +1144,10 @@ header .search {
 }
 
 .header__backgroung {
-  width: auto;
+  max-width: 100%;
+  height: 450px;
+  background-position: center;
+  background-size: cover;
   background-image: url(/assets/images/shopImg/Image.png);
   position: relative;
   display: flex;
@@ -1440,11 +1447,13 @@ header .search {
 }
 
 .about-us__block1 {
-  width: 1920px;
+  max-width: 100%;
   height: 450px;
   flex-shrink: 0;
   background-image: url(/assets/images/aboutImg/background_block1.svg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1998,8 +2007,10 @@ header .search {
 }
 
 .header .header__backgroung {
-  width: 1920px;
+  max-width: 100%;
   height: 450px;
+  background-position: center;
+  background-size: cover;
   background-image: url(/assets/images/contactImg/Patterns.png);
   position: relative;
   display: flex;
@@ -2446,11 +2457,17 @@ header .search {
   src: url("../fonts/open-sans-v40-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 .background_pict {
+  max-width: 100%;
   height: 450px;
-  width: 1920px;
+  padding: 184px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background: url(/assets/images/teamImg/background_image.svg);
   text-align: center;
-  padding: 184px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .h1_text {
@@ -2461,8 +2478,7 @@ header .search {
 }
 
 .wrapper {
-  max-width: 1401px;
-  margin-left: 534.5px;
+  max-width: 100%;
   margin-top: 150px;
 }
 
@@ -2475,7 +2491,7 @@ header .search {
 }
 
 .experts {
-  font-family: "Roobto";
+  font-family: "Roboto";
   font-weight: 800;
   font-size: 50px;
   color: #274C5B;
@@ -2689,6 +2705,4 @@ header .search {
   gap: 18.6px;
   padding-left: 310px;
   margin-top: -28.37px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
