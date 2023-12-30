@@ -20,6 +20,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Yellowtail-Regular';
     src: url('../fonts/Yellowtail-Regular.ttf') format('truetype');
@@ -66,10 +67,73 @@ header {
     }
 }
 
+/* Subscribe Styles */
+.about-us__block6 {
+    width: 1920px;
+    background-color: $compcolor3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .subscribe-block {
+        display: flex;
+        gap: 326px;
+        margin: 141px 0 70px 0;
+        width: 1400px;
+        height: 323px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background-image: url(/assets/images/aboutImg/img_block6.svg);
+        .about-us__block6__title {
+            padding: 105px 0 0 71px;
+            color: $compcolor3;
+            width: 430px;
+            height: 113px;
+            flex-shrink: 0;
+        }
+        .about-us__block6__input-box {
+            margin-top: 121.5px;
+            display: flex;
+            gap: 6px;
+            .about-us__block6__email-box {
+                width: 349px;
+                height: 80px;
+                flex-shrink: 0;
+                border-radius: 16px;
+                border: none;
+                background: $compcolor3;
+                padding: 5px 0 0 23px;
+                color: $color5;
+                font-family: $compfont;
+                font-size: 18px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .about-us__block6__button {
+                width: 220px;
+                height: 80px;
+                padding: 28px 47px 29px 47px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 16px;
+                border: none;
+                background-color: $compcolor;
+                color: $compcolor3;
+                font-family: $compfont;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+    }
+}
+
 /* Footer Styles */
 .footer {
     display: flex;
     padding: 50px;
+    justify-content: center;
     &__title {
         font-family: $font-roboto;
         font-size: 25px;
@@ -129,7 +193,6 @@ header {
 .utility-pages ul li {
     font-family: $font-open_sans, sans-serif;
     font-size: 18px;
-    // line-height: 50px;
     margin-bottom: calc(50px - 18px);
     color: #515b5f;
     &:last-child {
@@ -169,6 +232,11 @@ p .desc {
 .about .content .follow img {
     width: 20px;
     height: 20px;
+}
+
+.follow {
+    img {
+    display: inline-block;}
 }
 
 .contact-info address {

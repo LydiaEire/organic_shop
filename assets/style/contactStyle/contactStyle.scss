@@ -4,11 +4,12 @@
 
 
 .header {
-    .header__backgroung {
+    .header__background {
         max-width: 100%;
         height: 450px;
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
         background-image: url(/assets/images/contactImg/Patterns.png);
         position: relative;
         display: flex;
@@ -16,10 +17,8 @@
         font-size: 80px;
         font-weight: 3000;
 
-        ´ .header__shop-img {
-
-
-
+        .header__shop-img {
+            
             .header__pattern {
                 z-index: -0.1;
                 overflow: hidden;
