@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="normaliser" href="./assets/normalize.css"/>
-        <link rel="stylesheet" href="assets/style/style.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="normaliser" href="./assets/normalize.css">
+        <link rel="stylesheet" href="assets/style/style.css">
         <title>Product card</title>
     </head>
 <body>
 
     <header>
         <div class="logo">
-            <img id="logopic" src="/assets/images/homeImg/Logo1.png" alt="Лого" width="36px" />
+            <img id="logopic" src="/assets/images/homeImg/Logo1.png" alt="Лого" width="36px">
             Organick
         </div>
         <div class="nav">
@@ -23,52 +23,50 @@
             <a href="#">News</a>
         </div>
         <div class="search">
-            <img src="/assets/images/homeImg/Search.png" alt="Поле поиска" width="375px" />
+            <img src="/assets/images/homeImg/Search.png" alt="Поле поиска" width="375px">
         </div>
         <div class="cart">
-            <img src="/assets/images/homeImg/Cart.png" alt="Корзина" width="160px" />
+            <img src="/assets/images/homeImg/Cart.png" alt="Корзина" width="160px">
         </div>
     </header>
 
     <main>
-        <div class="box main-banner">
-            <div class="box__label">Shop Single</div>
-        </div>
         <div class="product-details">
-            <button class="product-details__tag">Millets</button>
-            <img class="product-details__img-promo" src="assets/images/singleImg/Nuts.png"/>
+            <div class="product-details__image" style="background-image: url(/assets/images/singleImg/Nuts.png)">
+                <div class="product-details__tag">Millets</div>
+            </div>
             <div class="product-details__content">
-                <div class="product-details__name-and-price">
-                    <div class="product-details__name">Health Pistachios</div>
-                    <div class="product-details__rating">
-                        <img class="product-details__star" src="assets/images/singleImg/Star.png" />
+                <div class="product-details__block">
+                    <div class="product-details__name-and-price">
+                        <div class="product-details__text-wrapper-2">Health Pistachios</div>
+                        <div class="product-details__rating">
+                            <img class="img" src="assets/images/singleImg/Star.png" alt="stars">
+                        </div>
+                            <div class="product-details__pricing">
+                                <div class="product-details__text-wrapper-3">$13.00</div>
+                                <div class="product-details__text-wrapper-4">$20.00</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-details__pricing">
-                        <div class="product-details__original-price"><s>$20.00</s></div>
-                        <div class="product-details__discounted-price"><strong>$13.00</strong></div>
+                    <p class="product-details__dummy-text">
+                        Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry&#39;s
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                    </p>
+                    <div class="product-details__button">
+                        <div class="product-details__element">
+                            <div class="product-details__text-wrapper-5">Quantity :</div>
+                            <div class="product-details__div-wrapper"><div class="product-details__text-wrapper-6">1</div></div>
+                        </div>
+                        <div class="product-details__element-2">
+                            <div class="product-details__text">
+                                <div class="product-details__text-wrapper-7">Add To Cart</div>
+                                <div class="product-details__arrow"><img class="product-details__vector" src="assets/images/singleImg/Arrow.png" alt="arrow"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <p class="product-details__description">Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-            <div class="product-details__quantity">
-                <span class="product-details__label">Quantity:</span>
-                <input type="number" id="quantity" name="quantity" class="product-details__input" value="1" min="1" />
-                <button class="product-details__add-to-cart">
-                    <span class="product-details__text">Add To Cart</span>
-                    <img class="product-details__arrow" src="assets/images/singleImg/Arrow.png" />
-                </button>
-            </div>   
-            <div class="product-buttons">
-                <button class="product-buttons__desc">Product Description</button>
-                <button class="product-buttons__info">Additional Info</button>
-                <p class="product-buttons__description">
-                    Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the
-                    principles of health, ecology, and care. We aim to give our customers a healthy chemical-free meal for perfect
-                    nutrition. It offers about 8–10% carbs. Simple sugars — such as glucose and fructose — make up 70% and 80% of
-                    the carbs in raw.
-                </p>
-            </div>
         </div>
+
         <span class="related-products__title">Related Products</span>    
         <div class="related-products">
             <div class="product">
@@ -78,7 +76,7 @@
                 <div class="product__pricing">
                     <div class="product__original-price"><s>$20.00</s></div>
                     <div class="product__discounted-price"><strong>$13.00</strong></div>
-                    <img class="product-details__star" src="assets/images/singleImg/Star.png"/>
+                    <img class="product-details__star" src="assets/images/singleImg/Star.png" alt="stars">
                 </div>
             </div>
             <div class="product">
@@ -88,7 +86,7 @@
                 <div class="product__pricing">
                     <div class="product__original-price"><s>$20.00</s></div>
                     <div class="product__discounted-price"><strong>$14.00</strong></div>
-                    <img class="product-details__star" src="assets/images/singleImg/Star.png"/>
+                    <img class="product-details__star" src="assets/images/singleImg/Star.png" alt="stars">
                 </div>
             </div>
             <div class="product">
@@ -98,7 +96,7 @@
                 <div class="product__pricing">
                     <div class="product__original-price"><s>$20.00</s></div>
                     <div class="product__discounted-price"><strong>$15.00</strong></div>
-                    <img class="product-details__star" src="assets/images/singleImg/Star.png"/>
+                    <img class="product-details__star" src="assets/images/singleImg/Star.png" alt="stars">
                 </div>
             </div>
             <div class="product">
@@ -108,7 +106,7 @@
                 <div class="product__pricing">
                     <div class="product__original-price"><s>$20.00</s></div>
                     <div class="product__discounted-price"><strong>$17.00</strong></div>
-                    <img class="product-details__star" src="assets/images/singleImg/Star.png"/>
+                    <img class="product-details__star" src="assets/images/singleImg/Star.png" alt="stars">
                 </div>
             </div>       
         </div>
@@ -126,54 +124,60 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="utility-pages">
-                <div class="footer__title">Utility Pages</div>
-                <ul>
-                    <li><a href="#">Style Guide</a></li>
-                    <li><a href="#">404 Not Found</a></li>
-                    <li><a href="#">Password Protected</a></li>
-                    <li><a href="#">Licences</a></li>
-                    <li><a href="#">Changelog</a></li>
-                </ul>
-            </div>
-            <div class="about">
-                <div>
-                    <div class="footer__title">Organick</div>
-                    <img src="/assets/images/homeImg/Logo1.png" alt="Organick Logo"/>
+        <div class="contact-us">
+            <div class="footer__title"><h4>Contact Us</h4></div>
+            <div class="footer_text">
+                <div class="mail">
+                <b>Email:</b><br />
+                <a href="mailto:needhelp@Organia.com">needhelp@Organia.com</a>
                 </div>
-                <div class="content">
-                    <p class="desc">
-                        Simply dummy text of the printing and typesetting industry.<br />
-                        Lorem Ipsum simply dummy text of the printing
-                    </p>
-                </div>    
-                <div class="follow">
-                    <img class="insta" src="/assets/images/homeImg/instagram.png" alt="Instagram" />
-                    <img class="fb" src="/assets/images/homeImg/facebook.png" alt="Facebook" />
-                    <img class="twitter" src="/assets/images/homeImg/twitter.png" alt="Twitter" />
-                    <img class="pinterest" src="/assets/images/homeImg/pinterest.png" alt="Pinterest" />
+                <div class="phone">
+                <b>Phone:</b><br />
+                <a href="tel:666888888">666 888 888</a>
                 </div>
-            </div>
-            <div class="contact-us">
-                <div class="contact-info">
-                    <div class="footer__title">Contact Us</div>
-                    <address>
-                        <span>Email:</span>
-                        <a href="mailto:needhelp@Organia.com">needhelp@Organia.com</a><br />
-                        <span>Phone:</span>
-                        <a href="tel:666888888">666 888 888</a><br />
-                        <span>Address:</span>
-                        <span>88 road, Brooklyn street, USA</span>
-                    </address>
+                <div class="address">
+                <b>Address:</b><br />
+                88 road, Brooklyn street, USA
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>
-                <span>&copy; Organick | Designed by VictorFlow Templates - Powered by Webflow</span>
-            </p>
+
+        <div class="about">
+            <div class="logo">
+            <img class="logopic" src="./assets/images/homeImg/Logo1.png" alt="logopic"/>Organick
+            </div>
+            <div class="cont-text">
+            Simply dummy text of the printing and typesetting industry.<br />
+            Lorem Ipsum simply dummy text of the printing
+            </div>
+            <div class="follow">
+                <div>
+                    <img class="insta" src="./assets/images/homeImg/instagram.png" alt="Instagram"/>
+                </div>
+                    <div> <img class="fb" src="./assets/images/homeImg/facebook.png" alt="Facebook"/>
+                    </div>
+                <div> <img class="twitter" src="./assets/images/homeImg/twitter.png" alt="Twitter"/>
+                </div>
+                <div> <img class="pinterest" src="./assets/images/homeImg/pinterest.png" alt="Pinterest"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="utility-pages">
+            <div class="footer__title"><h4>Utility Pages</h4></div>
+            <ul>
+                <li><a href="#">Style Guide</a></li>
+                <li><a href="#">404 Not Found</a></li>
+                <li><a href="#">Password Protected</a></li>
+                <li><a href="#">Licences</a></li>
+                <li><a href="#">Changelog</a></li>
+            </ul>
+        </div>
         </div>
     </footer>
-
+        <div class="legal">
+            <span>Copyright &copy; <b> Organick</b> | Designed by
+            <b> VictorFlow</b> Templates - Powered by <b> Webflow</b></span>
+        </div>
 </body>
 </html>

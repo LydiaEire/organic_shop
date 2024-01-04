@@ -129,13 +129,13 @@ h4 {
     }
     .organicpromo {
         display: grid;
-    grid-template-columns: 120px 1fr;
-    grid-template-rows: repeat (3, 1fr);}
+        grid-template-columns: 120px 1fr;
+        grid-template-rows: repeat (3, 1fr);}
     
     .promotext {
-    display: grid;
-    grid-column: 2/3;
-    width: 444px;
+        display: grid;
+        grid-column: 2/3;
+        width: 444px;
     }
 
     .certif {
@@ -143,3 +143,102 @@ h4 {
         grid-template-columns: 120px 1fr;
         grid-template-rows: repeat (3, 1fr);
         }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px)
+        {
+            header {
+                padding: 20px;
+                .nav {
+                    padding-left: 40px;
+                }
+                .search {
+                padding-left: 40px;
+                .searchfield {
+                    width:20vw;
+                }
+                .cartpic {
+                    width: 9vw;
+                }
+            }
+            }
+            .banner {
+                display:flex;
+        }
+        .centralpics {
+            margin-top: 3rem;
+            margin-left: 40rem;
+        }
+        .mission { 
+            margin-top: 3rem;
+            background-size: 100vw;
+            display: flex;
+            padding-left: 4rem;
+            .missionpic { display: none;
+            }
+            .description {
+                width: 100vw;
+            }
+            
+        }}
+
+
+
+            @media screen and (min-width: 768px) and (max-width: 1023px)
+            {
+                header {
+                    padding: 20px;
+                    .nav {
+                        padding-left: 40px;
+                    }
+                    .search {
+                    padding-left: 40px;
+                    .searchfield {
+                        width:20vw;
+                    }
+                    .cartpic {
+                        width: 9vw;
+                    }
+                }
+                }
+                .banner {
+                    display:flex;
+            }
+            .centralpics {
+                margin-top: 3rem;
+                margin-left: 40rem;
+            }
+            .mission { 
+                margin-top: 3rem;
+                background-size: 100vw;
+                display: flex;
+                padding-left: 4rem;
+                .missionpic { display: none;
+                }
+                .description {
+                    width: 100vw;
+                }
+                
+            }
+            .footer {
+                .utility-pages { display: none;
+                }
+                .contact-us {
+                    padding-left: 5rem;  
+                    width: 50%;
+                }
+                .about {
+                    text-align:start;
+                    align-items: start;
+                    border-right: none;
+                    padding-left: 5rem;
+                    .follow,
+                    .logo {
+                        padding-left: 0;
+                        }
+                }
+                }
+                .legal {
+                    border: none;
+                    padding-left: 2rem;
+                }
+                }                    
