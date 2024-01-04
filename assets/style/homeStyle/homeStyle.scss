@@ -71,13 +71,12 @@ h4 {
 }
 
 .banner {
+    background-image: url(/assets/images/homeImg/BannerBackground.png);
+    background-size: cover;
     display: grid;
+    background-color:#edebec;
     grid-template-columns: repeat (2, 1fr);
     grid-template-rows: 1fr;
-    background-size: 87vw;
-    background-repeat: no-repeat;
-    background-color:#F1EFF0;
-    background-image: url(images/BannerBackground.png);
 }
 
 .slogan {
@@ -92,6 +91,7 @@ h4 {
 .bannerpic {
     display: grid;
     grid-column: 2/3;
+    opacity: 0.9;
 }
 
 .knop {

@@ -166,3 +166,62 @@
         border-top: 2px solid rgb(210, 206, 206);
         padding-top: 1rem;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px)
+{
+    header {
+        padding: 20px;
+        .nav {
+            padding-left: 40px;
+        }
+        .search {
+        padding-left: 40px;
+        .searchfield {
+            width:20vw;
+        }
+        .cartpic {
+            width: 9vw;
+        }
+    }
+    }
+    .banner {
+        display:flex;
+}
+.centralpics {
+    margin-top: 3rem;
+    margin-left: 40rem;}
+.mission { 
+    margin-top: 3rem;
+    background-size: 100vw;
+    display: flex;
+    padding-left: 4rem;
+    .missionpic { display: none;
+    }
+    .description {
+        width: 100vw;
+    }
+    
+}
+.footer {
+    .utility-pages { display: none;
+    }
+    .contact-us {
+        padding-left: 5rem;  
+        width: 50%;
+    }
+    .about {
+        text-align:start;
+        align-items: start;
+        border-right: none;
+        padding-left: 5rem;
+        .follow,
+        .logo {
+            padding-left: 0;
+            }
+    }
+    }
+    .legal {
+        border: none;
+        padding-left: 2rem;
+    }
+    }

@@ -187,6 +187,63 @@ header {
   padding-top: 1rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 20px;
+  }
+  header .nav {
+    padding-left: 40px;
+  }
+  header .search {
+    padding-left: 40px;
+  }
+  header .search .searchfield {
+    width: 20vw;
+  }
+  header .search .cartpic {
+    width: 9vw;
+  }
+  .banner {
+    display: flex;
+  }
+  .centralpics {
+    margin-top: 3rem;
+    margin-left: 40rem;
+  }
+  .mission {
+    margin-top: 3rem;
+    background-size: 100vw;
+    display: flex;
+    padding-left: 4rem;
+  }
+  .mission .missionpic {
+    display: none;
+  }
+  .mission .description {
+    width: 100vw;
+  }
+  .footer .utility-pages {
+    display: none;
+  }
+  .footer .contact-us {
+    padding-left: 5rem;
+    width: 50%;
+  }
+  .footer .about {
+    text-align: start;
+    align-items: start;
+    border-right: none;
+    padding-left: 5rem;
+  }
+  .footer .about .follow,
+  .footer .about .logo {
+    padding-left: 0;
+  }
+  .legal {
+    border: none;
+    padding-left: 2rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -251,13 +308,12 @@ h4 {
 }
 
 .banner {
+  background-image: url(/assets/images/homeImg/BannerBackground.png);
+  background-size: cover;
   display: grid;
+  background-color: #edebec;
   grid-template-columns: repeat 2, 1fr;
   grid-template-rows: 1fr;
-  background-size: 87vw;
-  background-repeat: no-repeat;
-  background-color: #F1EFF0;
-  background-image: url(images/BannerBackground.png);
 }
 
 .slogan {
@@ -272,6 +328,7 @@ h4 {
 .bannerpic {
   display: grid;
   grid-column: 2/3;
+  opacity: 0.9;
 }
 
 .knop {
