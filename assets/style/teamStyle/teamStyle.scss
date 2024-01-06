@@ -2,295 +2,194 @@
 @import '../_components.scss';
 @import '../template';
 
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-  /* roboto-700 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-  /* roboto-900 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-  /* yellowtail-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Yellowtail';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/yellowtail-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+.container {
+    max-width: 1401px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-
-.background_pict {
-    max-width: 100%;
-    height: 450px;
-    padding: 184px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: url(/assets/images/teamImg/background_image.svg);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.h1_text {
-    font-family: 'Roboto';
-    font-weight: 800;
-    font-size: 70px;
-    color: #274C5B;
-
-}
-
-.wrapper {
-    max-width: 100%;
-    margin-top: 150px;
-}
-
-.team {
-    font-family: 'Yellowtail';
-    font-weight: 400;
-    color: #7EB693;
-    font-size: 36px;
-    text-align: center;
-}
-
-.experts {
-    font-family: 'Roboto';
-    font-weight: 800;
-    font-size: 50px;
-    color: #274C5B;
-    text-align: center;
-}
-
-.your_text {
-    text-align: center;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.our_team_main_1 {
-    display: grid;
-    width: 1401px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 260px;
-    margin-top: 42px;
-}
-
-.our_team_giovani {
-    width: 449px;
-    height: 615px;
-    border-radius: 25px;
-    background-color: #F9F8F8;
-}
-
-.our_team_giovani_name {
-    font-family: 'Roboto';
-    font-weight: 800;
-    font-size: 25px;
-    color: #274C5B;
-    margin-top: 34.5px;
-    margin-left: 28.37px;
-}
-
-.our_team_giovani_job {
-    font-family: 'Yellowtail';
-    margin-left: 28.37px;
-    font-weight: 400;
-    font-size: 22px;
-    color: #7EB693;
-}
-
-.our_team_giovani_social {
-    display: flex;
-    gap: 18.6px;
-    padding-left: 350px;
-    margin-top: -28.37px;
-}
-
-.our_team_marianne {
-    width: 449px;
-    height: 615px;
-    border-radius: 25px;
-    background-color: #F9F8F8;
-}
-
-.our_team_marianne_name {
-    font-family: 'Roboto';
-    font-weight: 800;
-    font-size: 25px;
-    color: #274C5B;
-    margin-top: 34.5px;
-    margin-left: 28.37px;
-}
-
-.our_team_marianne_job {
-    font-family: 'Yellowtail';
-    margin-left: 28.37px;
-    font-weight: 400;
-    font-size: 22px;
-    color: #7EB693;
-}
-
-.our_team_marianne_social {
-    display: flex;
-    gap: 18.6px;
-    padding-left: 310px;
-    margin-top: -28.37px;
-}
-
-.our_team_riga {
-    width: 449px;
-    height: 615px;
-    border-radius: 25px;
-    background-color: #F9F8F8;
-}
-
-.our_team_riga_name {
-    font-family: 'Roboto';
-    font-weight: 800;
-    font-size: 25px;
-    color: #274C5B;
-    margin-top: 34.5px;
-    margin-left: 28.37px;
-}
-
-.our_team_riga_job {
-    font-family: 'Yellowtail';
-    margin-left: 28.37px;
-    font-weight: 400;
-    font-size: 22px;
-    color: #7EB693;
-}
-
-.our_team_riga_social {
-    display: flex;
-    gap: 18.6px;
-    padding-left: 310px;
-    margin-top: -28.37px;
-}
-
-.our_team_main_2 {
-    display: grid;
-    width: 1401px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 260px;
-    margin-top: 42px;
-}
-
-.our_team_keira {
-    width: 449px;
-    height: 615px;
-    border-radius: 25px;
-    background-color: #F9F8F8;
-}
-
-.our_team_keira_name {
-    font-family: 'Roboto';
-    font-weight: 800;
-    font-size: 25px;
-    color: #274C5B;
-    margin-top: 34.5px;
-    margin-left: 28.37px;
-}
-
-.our_team_keira_job {
-    font-family: 'Yellowtail';
-    margin-left: 28.37px;
-    font-weight: 400;
-    font-size: 22px;
-    color: #7EB693;
-}
-
-.our_team_keira_social {
-    display: flex;
-    gap: 18.6px;
-    padding-left: 350px;
-    margin-top: -28.37px;
-}
-
-.our_team_scott {
-    width: 449px;
-    height: 615px;
-    border-radius: 25px;
-    background-color: #F9F8F8;
-}
-
-.our_team_scott_name {
-    font-family: 'Roboto';
-    font-weight: 800;
-    font-size: 25px;
-    color: #274C5B;
-    margin-top: 34.5px;
-    margin-left: 28.37px;
-}
-
-.our_team_scott_job {
-    font-family: 'Yellowtail';
-    margin-left: 28.37px;
-    font-weight: 400;
-    font-size: 22px;
-    color: #7EB693;
-}
-
-.our_team_scott_social {
-    display: flex;
-    gap: 18.6px;
-    padding-left: 310px;
-    margin-top: -28.37px;
-}
-
-.our_team_karen {
-    width: 449px;
-    height: 615px;
-    border-radius: 25px;
-    background-color: #F9F8F8;
-}
-
-.our_team_karen_name {
-    font-family: 'Roboto';
-    font-weight: 800;
-    font-size: 25px;
-    color: #274C5B;
-    margin-top: 34.5px;
-    margin-left: 28.37px;
-}
-
-.our_team_karen_job {
-    font-family: 'Yellowtail';
-    margin-left: 28.37px;
-    font-weight: 400;
-    font-size: 22px;
-    color: #7EB693;
-}
-
-.our_team_karen_social {
-    display: flex;
-    gap: 18.6px;
-    padding-left: 310px;
-    margin-top: -28.37px;
+main {
+    .main_background {
+        background-image: url(/assets/images/teamImg/background_image.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-bottom: 120px;
+        @media (max-width: 1023px) {
+            margin-bottom: 70px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+        .main_background_container {
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: #274c5b;
+            font-size: 2.5rem;
+            font-family: $font;
+            @media (max-width: 1023px) {
+            font-size: 2rem;
+            height: 300px;
+            }
+            @media (max-width: 767px) {
+                height: 200px;
+                font-size: 1.3rem;
+            }
+    }
+    }
+    .main_info {
+        text-align: center;
+        .description {
+            margin-bottom: 42px;
+            span {
+            /*margin-bottom: 8px;*/
+            font-size: 36px;
+            font-weight: 400;
+            color: #7eb693;
+            font-family: $font_1;
+            }
+            .p1 {
+            font-size: 50px;
+            font-weight: 800;
+            color: #274c5b;
+            margin-bottom: 8px;
+            font-family: $font;
+            @media (max-width: 1023px) {
+                font-size: 30px;
+            }
+            @media (max-width: 767px) {
+                font-size: 24px;
+            }
+        }
+        .p2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #525c60;
+            text-align: center;
+            font-family: $font_2;
+            }
+        }
+    }
+    .main_team_1 {
+        display: flex;
+        gap: 17px;
+        justify-content: center;
+        margin-bottom: 42px;
+        padding: 10px;
+        .content_cards {
+            padding: 35px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            align-items: flex-end;
+        @media (max-width: 1023px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            }
+            .descr__user {
+        @media (max-width: 1023px) {
+                margin-bottom: 20px;
+            }
+            .name {
+                color: #274c5b;
+                font-family: $font;
+                font-size: 25px;
+                font-weight: 800;
+                @media (max-width: 1023px) {
+                margin-bottom: 10px;
+                font-size: 24px;
+                }
+                @media (max-width: 767) {
+                text-align: center;
+                font-size: 20px;
+                }
+            }
+            .job {
+                font-family: $font_1;
+                color: #7eb693;
+                font-size: 22px;
+                font-weight: normal;
+            @media (max-width: 1023px) {
+                text-align: center;
+                font-size: 20px;
+                }
+            @media (max-width: 767) {
+                text-align: center;
+                font-size: 16px;
+                }
+            }
+            }
+        }
+        .main_team_1__giovani {
+            max-width: 449px;
+            height: 100%;
+            border-radius: 25px;
+            background-color: #f9f8f8;
+            img {
+            width: 100%;
+            }
+        }
+        .main_team_1__marianne {
+            max-width: 449px;
+            height: 100%;
+            border-radius: 25px;
+            background-color: #f9f8f8;
+            img {
+            width: 100%;
+            }
+    }
+        .main_team_1__riga {
+            max-width: 449px;
+            height: 100%;
+            border-radius: 25px;
+            background-color: #f9f8f8;
+                img {
+                width: 100%;
+                }
+    }
+        .main_team_1__keira {
+            max-width: 449px;
+            height: 100%;
+            border-radius: 25px;
+            background-color: #f9f8f8;
+                img {
+                width: 100%;
+                }
+    }
+    .main_team_1__scott {
+        max-width: 449px;
+        height: 100%;
+        border-radius: 25px;
+        background-color: #f9f8f8;
+        img {
+            width: 100%;
+        }
+    }
+    .main_team_1__karen {
+        max-width: 449px;
+        height: 100%;
+        border-radius: 25px;
+        background-color: #f9f8f8;
+        img {
+            width: 100%;
+        }
+    }
+        .img__social {
+            img {
+                width: 22px;
+                height: 21px;
+                margin-right: 17px;
+            }
+        :last-child {
+            margin-right: 0;
+        }
+    }
+    }
+    .second {
+        margin: 0;
+    }
 }

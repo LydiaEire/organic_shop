@@ -104,6 +104,7 @@ header {
   width: 100%;
   gap: 10rem;
   justify-content: flex-start;
+  max-width: 100%;
 }
 .footer .utility-pages {
   order: 3;
@@ -185,6 +186,77 @@ header {
   padding-top: 1rem;
 }
 
+@media screen and (max-width: 767px) {
+  .bannerpic,
+  .missionpic,
+  .utility-pages {
+    display: none;
+  }
+  header {
+    display: block;
+    padding: 2rem;
+  }
+  header .nav,
+  header .search {
+    padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 5rem;
+  }
+  header .searchfield {
+    width: 36vw;
+  }
+  header .cartpic {
+    width: 15vw;
+  }
+  .banner {
+    margin-top: 0;
+  }
+  .banner .slogan {
+    padding: 2rem;
+  }
+  .banner .slogan .title {
+    width: 70%;
+  }
+  .banner .slogan .title h1 {
+    font-size: 7vw;
+  }
+  .centralpics {
+    margin: 1rem;
+    display: block;
+    padding: 0;
+  }
+  .mission {
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  .mission .description {
+    width: 80%;
+  }
+  .mission .description h2 {
+    font-size: 7vw;
+  }
+  .mission .description .cont-text {
+    font-size: 2vw;
+  }
+  .footer .contact-us {
+    padding-left: 7rem;
+  }
+  .footer .about {
+    text-align: start;
+    align-items: start;
+    border-right: none;
+    padding-left: 7rem;
+  }
+  .footer .about .follow,
+  .footer .about .logo {
+    padding-left: 0;
+  }
+  .legal {
+    border: none;
+    padding-left: 2rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header {
     padding: 20px;
@@ -249,60 +321,94 @@ header {
 }
 
 .header__backgroung {
-  max-width: 100%;
-  height: 450px;
-  background-position: center;
-  background-size: cover;
+  max-width: 1920px;
+  min-height: 450px;
   background-image: url(/assets/images/shopImg/Image.png);
-  position: relative;
-  display: flex;
-  text-align: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
   font-size: 80px;
-  font-weight: 3000;
-}
-.header__backgroung .header__shop-img .div__pattern {
-  z-index: -1;
-  overflow: hidden;
+  font-weight: 300;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin-bottom: 90px;
 }
-.header__backgroung .header__shop-name-title {
+
+.header__shop-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header__shop-img h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #274C5B;
+  font-family: "Roboto";
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 900;
   text-align: center;
-  z-index: 1;
-  position: absolute;
-  padding: 200px;
-  padding-left: 1000px;
-  font-family: "Roboto-ExtraBold", Helvetica;
-  font-weight: 800;
-  color: #274c5b;
-  font-size: 70px;
-  letter-spacing: 0;
+  margin: 0 auto;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  justify-content: center;
+  align-items: center;
+}
+.header__shop-img img {
+  display: grid;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .main {
   width: 100%;
+  margin: 0 auto;
 }
-.main__products {
+.main .main__products {
   max-width: 1000px;
-  padding-left: 400px;
-  padding-right: 260px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1rem;
-  padding-top: 90px;
+  margin-bottom: 90px;
 }
-.main__products .card {
+@media (max-width: 1024px) {
+  .main .main__products {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .main .main__products {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+.main .main__products .card {
+  width: 100%;
   border-radius: 30px;
   background-color: #FfFfFf;
-  height: 500px;
+  height: 100%;
 }
-.main__products .card .card-img-top {
+.main .main__products .card .card-img-top {
   height: 250px;
 }
-.main__products .card .card-category {
+.main .main__products .card .product-card-title {
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #274c5b;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+.main .main__products .card .card-category {
   border-radius: 8px;
   background: #274C5B;
   width: 100px;
@@ -311,26 +417,45 @@ header {
   margin-top: 29px;
   margin-bottom: 13px;
   text-align: center;
-  font-family: Open Sans;
+  font-family: "Roboto-SemiBold", Helvetica;
   font-size: 15px;
   font-weight: 600;
 }
-.main__products .card .card-body .card-prise {
+.main .main__products .card .card-body .card-prise {
   text-decoration: line-through;
   font-family: Open Sans;
   font-size: 15px;
   color: #B8B8B8;
   font-weight: 600;
 }
-.main__products .card .card-body .card-newprise {
+.main .main__products .card .card-body .card-newprise {
   color: #274C5B;
-  font-family: Open Sans;
+  font-family: "Open Sans-Bold", Helvetica;
   font-size: 18px;
   font-weight: 700;
 }
-.main .main__title {
+.main .main__subscribe {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 300px;
+  background-image: url(./assets/img/Photo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .main .main__subscribe {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
+.main .main__subscribe .main__title {
   color: #FFF;
-  font-family: Roboto;
+  font-family: "Roboto-SemiBold", Helvetica;
   font-size: 50px;
   font-weight: 800;
   width: 500px;
@@ -338,9 +463,9 @@ header {
   padding-left: 100px;
   margin-bottom: 30px;
 }
-.main .btn {
+.main .main__subscribe .btn {
   display: flex;
-  width: 220px;
+  max-width: 220px;
   height: 78px;
   padding: 28px 47px 29px 47px;
   flex-direction: column;
@@ -348,20 +473,25 @@ header {
   align-items: center;
   background-color: #274C5B;
   color: #FFF;
-  font-family: Roboto;
+  font-family: "Roboto-SemiBold", Helvetica;
   font-size: 20px;
   font-weight: 700;
   margin-right: 30px;
   margin-top: 5px;
 }
-.main .form-control {
-  width: 349px;
+.main .main__subscribe .form-control {
+  max-width: 349px;
   height: 78px;
   color: #ABABAB;
-  font-family: Roboto;
+  font-family: "Roboto-SemiBold", Helvetica;
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
   margin-left: 130px;
   margin-right: 6px;
+}
+@media (max-width: 1024px) {
+  .main .main__subscribe .form-control {
+    margin-left: 5px;
+  }
 }/*# sourceMappingURL=shopStyle.css.map */
