@@ -314,6 +314,102 @@ header {
     padding-left: 2rem;
   }
 }
+.block6 {
+  width: 100%;
+  max-width: 100%;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block6 .subscribe-block {
+  display: flex;
+  gap: 326px;
+  margin: 141px 0 70px 0;
+  max-width: 1400px;
+  min-height: 323px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background-image: url(/assets/images/aboutImg/img_block6.svg);
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .block6 .subscribe-block {
+    flex-direction: column;
+    margin: 60px 0 60px 0;
+    gap: 100px;
+  }
+}
+.block6 .subscribe-block .block6__title {
+  padding: 105px 0 0 71px;
+  color: #FFF;
+  width: 430px;
+  height: 113px;
+  flex-shrink: 0;
+}
+.block6 .subscribe-block .block6__input-box {
+  margin-top: 121.5px;
+  display: flex;
+  gap: 6px;
+  padding-right: 71px;
+}
+@media screen and (max-width: 768px) {
+  .block6 .subscribe-block .block6__input-box {
+    padding: 0;
+  }
+}
+.block6 .subscribe-block .block6__input-box .block6__email-box {
+  width: 349px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: none;
+  background: #FFF;
+  padding: 5px 0 0 23px;
+  color: #ABABAB;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (max-width: 768px) {
+  .block6 .subscribe-block .block6__input-box .block6__email-box {
+    background-color: #F9F8F8;
+  }
+}
+.block6 .subscribe-block .block6__input-box .block6__button {
+  width: 220px;
+  height: 80px;
+  padding: 28px 47px 29px 47px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  border: none;
+  background-color: #274C5B;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container {
+  max-width: 1401px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.team_title {
+  font-size: 70px;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 70px;
+  color: #274C5B;
+}
+
 main .main_background {
   background-image: url(/assets/images/teamImg/background_image.svg);
   background-repeat: no-repeat;
@@ -334,7 +430,7 @@ main .main_background {
 main .main_background .main_background_container {
   height: 450px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
   color: #274c5b;

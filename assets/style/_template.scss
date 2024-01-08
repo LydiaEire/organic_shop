@@ -262,19 +262,19 @@
     .banner {
         display:flex;
 }
-.centralpics {
-    margin-top: 3rem;
-    margin-left: 40rem;}
-.mission { 
-    margin-top: 3rem;
-    background-size: 100vw;
-    display: flex;
-    padding-left: 4rem;
-    .missionpic { display: none;
-    }
-    .description {
-        width: 100vw;
-    }
+    .centralpics {
+        margin-top: 3rem;
+        margin-left: 40rem;}
+    .mission { 
+        margin-top: 3rem;
+        background-size: 100vw;
+        display: flex;
+        padding-left: 4rem;
+        .missionpic { display: none;
+        }
+        .description {
+            width: 100vw;
+        }
     
 }
 .footer {
@@ -300,3 +300,79 @@
         padding-left: 2rem;
     }
     }
+
+    // Subscribe block//
+.block6 {
+    width: 100%;
+    max-width: 100%;
+    background-color: $compcolor3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .subscribe-block {
+        display: flex;
+        gap: 326px;
+        margin: 141px 0 70px 0;
+        max-width: 1400px;
+        min-height: 323px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background-image: url(/assets/images/aboutImg/img_block6.svg);
+        background-repeat: no-repeat;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            margin: 60px 0 60px 0;
+            gap: 100px;
+        }
+        .block6__title {
+            padding: 105px 0 0 71px;
+            color: $compcolor3;
+            width: 430px;
+            height: 113px;
+            flex-shrink: 0;
+        }
+        .block6__input-box {
+            margin-top: 121.5px;
+            display: flex;
+            gap: 6px;
+            padding-right: 71px;
+            @media screen and (max-width: 768px) {
+                padding: 0;
+            }
+            .block6__email-box {
+                width: 349px;
+                height: 80px;
+                flex-shrink: 0;
+                border-radius: 16px;
+                border: none;
+                background: $compcolor3;
+                padding: 5px 0 0 23px;
+                color: $color5;
+                font-family: $compfont;
+                font-size: 18px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: normal;
+                @media screen and (max-width: 768px) {
+                    background-color: $color4;
+                }
+            }
+            .block6__button {
+                width: 220px;
+                height: 80px;
+                padding: 28px 47px 29px 47px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 16px;
+                border: none;
+                background-color: $compcolor;
+                color: $compcolor3;
+                font-family: $compfont;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+    }
+}

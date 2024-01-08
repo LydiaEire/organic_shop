@@ -36,11 +36,6 @@ h4 {
     color: $colordark;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .logo {
     font-family: $font-roboto;
@@ -64,7 +59,6 @@ h4 {
     font-size: 20px;
     font-weight: bolder;
 }
-
 
 .search {
     padding-left: 150px;
@@ -112,7 +106,6 @@ h4 {
     grid-template-rows: 1fr;
     background-color: #F9F8F8;
     margin-top: 190px;
-    }
     .description {
         width: 705px;
         display: grid;
@@ -120,6 +113,15 @@ h4 {
         grid-template-rows: repeat (3, 1fr);
         align-content: center;
         gap: 15px;
+    }
+    .title {
+        font-family: "Roboto-ExtraBold", Helvetica;
+        font-weight: 800;
+        color: #274c5b;
+        font-size: 50px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: normal;
     }
     .text {
         font-family: $fonttext;
@@ -143,102 +145,17 @@ h4 {
         grid-template-columns: 120px 1fr;
         grid-template-rows: repeat (3, 1fr);
         }
+}
 
-        @media screen and (min-width: 768px) and (max-width: 1023px)
-        {
-            header {
-                padding: 20px;
-                .nav {
-                    padding-left: 40px;
-                }
-                .search {
-                padding-left: 40px;
-                .searchfield {
-                    width:20vw;
-                }
-                .cartpic {
-                    width: 9vw;
-                }
-            }
-            }
-            .banner {
-                display:flex;
-        }
-        .centralpics {
-            margin-top: 3rem;
-            margin-left: 40rem;
-        }
-        .mission { 
-            margin-top: 3rem;
-            background-size: 100vw;
-            display: flex;
-            padding-left: 4rem;
-            .missionpic { display: none;
-            }
-            .description {
-                width: 100vw;
-            }
-            
-        }}
-
-
-
-            @media screen and (min-width: 768px) and (max-width: 1023px)
-            {
-                header {
-                    padding: 20px;
-                    .nav {
-                        padding-left: 40px;
-                    }
-                    .search {
-                    padding-left: 40px;
-                    .searchfield {
-                        width:20vw;
-                    }
-                    .cartpic {
-                        width: 9vw;
-                    }
-                }
-                }
-                .banner {
-                    display:flex;
-            }
-            .centralpics {
-                margin-top: 3rem;
-                margin-left: 40rem;
-            }
-            .mission { 
-                margin-top: 3rem;
-                background-size: 100vw;
-                display: flex;
-                padding-left: 4rem;
-                .missionpic { display: none;
-                }
-                .description {
-                    width: 100vw;
-                }
-                
-            }
-            .footer {
-                .utility-pages { display: none;
-                }
-                .contact-us {
-                    padding-left: 5rem;  
-                    width: 50%;
-                }
-                .about {
-                    text-align:start;
-                    align-items: start;
-                    border-right: none;
-                    padding-left: 5rem;
-                    .follow,
-                    .logo {
-                        padding-left: 0;
-                        }
-                }
-                }
-                .legal {
-                    border: none;
-                    padding-left: 2rem;
-                }
-                }                    
+@media screen and (max-width: 767px)
+{
+    .missionpic{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+    .missionpic{
+        display: none;
+    }
+}
